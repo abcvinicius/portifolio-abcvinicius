@@ -1,5 +1,11 @@
 import styled from "styled-components";
 import Java from '../assets/JavaSlide.jpg';
+import SpringBoot from '../assets/SpringBootSlide.jpg';
+import PostgressSql from '../assets/PostgressSqlSlide.jpg';
+import JavaScript from '../assets/JavaScriptSlide.jpg';
+import Html5 from '../assets/Html5Slide.jpg';
+import Css3 from '../assets/Css3Slide.jpg';
+
 
 export const AreaStylePages = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
@@ -88,10 +94,7 @@ to{
 }
 
 
-.botao-principal {
-  width: 350px;
-  justify-content: space-between;
-}
+
 
 }
 .botao-linkedin{
@@ -434,6 +437,7 @@ to{
 }
 
 .Tecnologias {
+  
   scroll-snap-align: start;
   height: 100vh;
   color: gray;
@@ -443,9 +447,6 @@ to{
 } 
 
 
-.inner p{
-  font-size: 10px;
-}
 #slider {
   margin: 0 auto;
   width: 100%;
@@ -455,9 +456,7 @@ to{
 #slider input[type=radio] {
   display: none;
 }
-#slider section {
-  cursor:pointer;
-}
+
 #slides {
   border-bottom: 1px solid;
   border-image: conic-gradient(from var(--angle),  #000066, #ff9933, #ffcc00, gray, green, transparent) 1;
@@ -467,10 +466,55 @@ to{
   width: 100%;
   float: left;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  
+  height: 45rem;
 }
+
+
+
+.tec-paragrafo{
+  padding: 75px;
+
+}
+.tec-paragrafo #tec-titulos h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  text-align: initial;
+}
+.tec-paragrafo #tec-titulos p{
+  text-align: left;
+  width: 65%;
+  
+  margin-top: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+.botao-java-tecnologia{
+  box-shadow:0px 3px 20px #010101;
+  cursor: pointer;  
+  width: 200px;
+  border-radius: 8px;
+  background-color: #151515;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  height: 45px;
+}
+
+.botao-java-tecnologia p{
+  text-align: center;
+  color: #DB2B39;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.botao-java-tecnologia p:hover{
+  color: #fff;
+}
+;
+
+
 #overflow {
   width: 100%;
 }
@@ -493,10 +537,42 @@ to{
 #slide6:checked ~ #slides .inner {
   margin-left: -500%;
 }
+
+
+
+#slide01{
+  background:url(${Java}); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide02{
+  background: url(${SpringBoot}); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide03{
+  background:url(${PostgressSql});
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide04{
+  background: url(${JavaScript});
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide05{
+  background: url(${Html5});
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slide06{
+  background: url(${Css3});
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #slides .inner {
-  transition: margin-left 700ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  transition: margin-left 700ms cubic-bezier(0.970, 0.000, 0.100, 1.000);
   width: 625%;
-  line-height: 0;
   height: 100%;
 }
 
@@ -506,36 +582,11 @@ to{
   display: flex;
   margin: 0px;
   align-items: center;
-  height: 100%;
   color: #fff;
 }
-#slides .slide_1 img{
-  width: 100%;
-  height: 100%;
-}
-#slides .slide_2 img{
-  width: 100%;
-  height: 100%;
-}
-#slides .slide_3 img{
-  width: 100%;
-  height: 100%;
-}
-#slides .slide_4 img{
-  width: 100%;
-  height: 100%;
-}
-#slides .slide_5 img{
-  width: 5000rem;
-  height: 100rem;
-}
 
-#slides .slide_6 img{
-  width: 14000%;
-  height: 100%;
-}
 #controls {
-  margin: -1050px 0 0;
+  margin: -120px 0 0;
 
 }
 #controls img {
@@ -544,54 +595,31 @@ to{
   margin: 20px;
   padding: 10px; 
   transition: padding 0.3s ease-out;
+  
 }
 
 #slide1id img:hover {
-  --angle: 0deg;
   padding: 5px;
-  border-bottom: 1.7px solid;
-  border-image: conic-gradient(from var(--angle),  Black, Red, Black) 1;
-  animation: 2s rotate linear infinite;
+
 }
 #slide2id img:hover {
-  --angle: 0deg;
   padding: 5px;
-  border-bottom: 1.7px solid;
-  border-image: conic-gradient(from var(--angle),  Black, limegreen, Black) 1;
-  animation: 2s rotate linear infinite;
+
 }
 #slide3id img:hover {
-  --angle: 0deg;
   padding: 5px;
-  border-bottom: 1.7px solid;
-  border-image: conic-gradient(from var(--angle),  Black, SkyBlue, Black) 1;
-  animation: 2s rotate linear infinite;
 }
 #slide4id img:hover {
-  --angle: 0deg;
   padding: 5px;
-  border-bottom: 1.7px solid;
-  border-image: conic-gradient(from var(--angle),  Black, Yellow, Black) 1;
-  animation: 2s rotate linear infinite;
 }
 #slide5id img:hover {
-  --angle: 0deg;
   padding: 5px;
-  border-bottom: 1.7px solid;
-  border-image: conic-gradient(from var(--angle),  Black, Orange, Black) 1;
-  animation: 2s rotate linear infinite;
 }
 #slide6id img:hover {
-  --angle: 0deg;
   padding: 5px;
-  border-bottom: 1.7px solid;
-  border-image: conic-gradient(from var(--angle),  Black, RoyalBlue , Black) 1;
-  animation: 2s rotate linear infinite;
 }
 #controls label {
   transition: opacity 0.2s ease-out;  
-  width: 50px;
-  height: 50px;
   opacity: .8;
 }
 #controls label:hover {
@@ -620,16 +648,139 @@ to{
 
 
 .Contato {
-  overflow-x: scroll;
-  scroll-snap-type: x proximity;
-    scroll-snap-align: start;
-    height: 100vh;
-    width: 100%;
-    color: gray;
-    font-size: 30px;
-    font-weight: bold;
-    box-sizing: border-box;
-    background-color: #111111;
+  padding-left: 100px;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100%;
+  color: gray;
+  box-sizing: border-box;
+  background-color: #111111;
   }
- 
+.main-form{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-form{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.left-form h1{
+  margin-bottom: 10px;
+  font-weight: 1;
+}
+.right-form{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.card-form {
+  background-color: #252525;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  border-radius: 30px;
+  box-shadow:0px 10px 40px #010101;
+}
+.card-form h1{
+  color: #DB2B39;
+  font-weight: 1;
+  font-size: 40px;
+  margin: 0;
+}
+.textfield {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  
+}
+.textfield input {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: #101010;
+  color: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+.textfield-name input {
+  width: 22rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: #101010;
+  color: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+.textfield-email input {
+  width: 22rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: #101010;
+  color: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+.textfield-telefone input {
+  width: 22rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: #101010;
+  color: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+.textfield-descricao input {
+  width: 22rem;
+  height: 10rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background: #101010;
+  color: #fff;
+  outline: none;
+  box-sizing: border-box;
+}
+.textfield-descricao input::placeholder {
+  position: relative;
+  margin-top: auto; 
+}
+.btn-form{
+  cursor: pointer;
+  width: 80%;
+  padding: 15px;
+  color: #010101;
+  background-color: #DB2B39;
+  outline: none;
+  text-transform: uppercase;
+  margin: 25px;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 5px;
+  transition: letter-spacing 0.4s ease-out;
+}
+.btn-form:hover{
+  color: #fff;
+  letter-spacing: 15px;
+}
 `;

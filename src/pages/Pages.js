@@ -8,14 +8,10 @@ import PostgreesSql from '../assets/PostgreesSql.png';
 import SpringBoot from '../assets/SpringBoot.png';
 import Html5 from '../assets/Html5.png';
 import Css3 from '../assets/Css3.png';
-import JavaSlide from '../assets/JavaSlide.jpg';
-import SpringBootSlide from '../assets/SpringBootSlide.jpg';
-import PostgressSqlSlide from '../assets/PostgressSqlSlide.jpg';
-import JavaScriptSlide from '../assets/JavaScriptSlide.jpg';
-import Html5Slide from '../assets/Html5Slide.jpg';
-import Css3Slide from '../assets/Css3Slide.jpg';
 
-function Pages() {
+
+
+function Pages(){
     return (
         <AreaStylePages>
             <body>    
@@ -89,36 +85,83 @@ function Pages() {
                     <div id="slides">
                     <div id="overflow">
                     <div class="inner">            
-                    <div class="slide slide_1" >
-                        <div class="slide-content"> 
-                        <a><p>oi</p></a>
-                        <img src={JavaSlide} />                       
+                    <div class="slide slide_1" id="slide01">
+                    <div className="tec-paragrafo">
+                        <div id="tec-titulos">
+                            <h1>Java </h1>
+                            <p>
+                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            </p>
+                        </div>
+                       <div className="botao-java-tecnologia">
+                            <p>Java GitHub</p>
                         </div>
                     </div>
-                    <div class="slide slide_2">
-                        <div class="slide-content">
-                        <img src={SpringBootSlide} />
-                       </div>
                     </div>
-                    <div class="slide slide_3">
-                        <div class="slide-content">
-                        <img src={PostgressSqlSlide} />                            
+                    <div class="slide slide_2" id="slide02">
+                    <div className="tec-paragrafo">
+                        <div id="tec-titulos">
+                            <h1>Spring Boot </h1>
+                            <p>
+                            Depois de ter entrado no mundo de Java e terminar POO por completo, eu começei a estudar Spring onde aprendi sobre aplicações, metologia Rest e conexões com Banco de Dados, até então continuo estudando pois eu sei que ainda estou na ponta do "Iceberg".
+                            </p>
+                        </div>
+                       <div className="botao-java-tecnologia">
+                            <p>SpringBoot GitHub</p>
                         </div>
                     </div>
-                    <div class="slide slide_4">
-                        <div class="slide-content">
-                        <img src={JavaScriptSlide} />                        
+                    </div>
+                    <div class="slide slide_3" id="slide03">
+                    <div className="tec-paragrafo">
+                        <div id="tec-titulos">
+                            <h1>PostgreSQL</h1>
+                            <p>
+                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            </p>
+                        </div>
+                       <div className="botao-java-tecnologia">
+                            <p>PostgreSQL GitHub</p>
                         </div>
                     </div>
-                    <div class="slide slide_5">
-                    <img src={Html5Slide} />
-                        <div class="slide-content">               
+                    </div>
+                    <div class="slide slide_4" id="slide04">
+                    <div className="tec-paragrafo">
+                        <div id="tec-titulos">
+                            <h1>JavaScript</h1>
+                            <p>
+                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            </p>
+                        </div>
+                       <div className="botao-java-tecnologia">
+                            <p>JavaScript GitHub</p>
                         </div>
                     </div>
-                        <div class="slide slide_6">
-                        <img src={Css3Slide} />
-                        <div class="slide-content">
+                    </div>
+                    <div class="slide slide_5" id="slide05">
+                    <div className="tec-paragrafo">
+                        <div id="tec-titulos">
+                            <h1>Html 5</h1>
+                            <p>
+                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            </p>
                         </div>
+                       <div className="botao-java-tecnologia">
+                            <p>Html5 GitHub</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="slide slide_6" id="slide06">
+                    <div className="tec-paragrafo">
+                        <div id="tec-titulos">
+                            <h1>Css 3</h1>
+                            <p>
+                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            </p>
+                        </div>
+                       <div className="botao-java-tecnologia">
+                            <p>Css3 GitHub</p>
+                        </div>
+                    </div>
                     </div>
     
 
@@ -147,8 +190,55 @@ function Pages() {
 
 
                     <section id="Contato" className="Contato"> 
-                    </section>                    
+                        <div className="main-form">
+                            <div className="left-form">
+                                <h1 style={{color: "white"}}>Preencher o formulário caso queira entrar em Contato. </h1>
+                                <h1>Esse Formulario é conectado a uma API onde dentro do Banco eu acesso as informações das pessoas que entraram em contato comigo.</h1>
+                            </div>
+                            <div className="right-form">
+                                <div className="card-form">
+                                    <h1>Formulario</h1>
+                                    <div className="textfield">
 
+
+
+                                    <div className="textfield-name">
+                                        <label for="Nome">Nome</label>
+                                        <input type={Text}  placeholder="Nome" ></input>
+                                    </div>
+
+
+
+
+                                    <div className="textfield-email">
+                                        <label for="email">Email</label>
+                                        <input type={"email"} placeholder="Email"></input>                                    
+                                    </div>
+
+
+
+                                    <div className="textfield-telefone">
+                                        <label for="telefone">Telefone</label>
+                                        <input type={"tel"} pattern="\([0-9]{2}\)[9]{1}[0-9]{4}[0-9]{4}" placeholder="(XX)-9XXXX-XXXX"></input>                                    
+                                    </div>
+
+
+
+                                    <div className="textfield-descricao">
+                                        <label for="desc">Descrição</label>
+                                        <input type={Text} placeholder="Digite sobre o porque de entrar em contato:"></input>                                    
+                                    </div>
+
+
+
+                                <button type="submit" className="btn-form">Enviar</button>
+
+                                
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </body>
             </AreaStylePages>   
