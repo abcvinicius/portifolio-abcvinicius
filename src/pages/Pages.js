@@ -82,6 +82,7 @@ function Pages(){
                         <input type="radio" name="slider" id="slide4" />
                         <input type="radio" name="slider" id="slide5" />
                         <input type="radio" name="slider" id="slide6" />
+                    
                     <div id="slides">
                     <div id="overflow">
                     <div class="inner">            

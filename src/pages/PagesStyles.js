@@ -436,8 +436,16 @@ to{
   background-color: #151515;
 }
 
+
+
+
+
+
+
+
+
+
 .Tecnologias {
-  
   scroll-snap-align: start;
   height: 100vh;
   color: gray;
@@ -446,31 +454,20 @@ to{
   justify-content: center;
 } 
 
-
 #slider {
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
   text-align: center;
 }
 #slider input[type=radio] {
   display: none;
 }
 
-#slides {
-  border-bottom: 1px solid;
-  border-image: conic-gradient(from var(--angle),  #000066, #ff9933, #ffcc00, gray, green, transparent) 1;
-  animation: 7s rotate linear infinite;
-}
 #slides .slide {
   width: 100%;
   float: left;
   display: flex;
-  
-  height: 45rem;
+  height: 100vh;  
 }
-
-
 
 .tec-paragrafo{
   padding: 75px;
@@ -635,7 +632,13 @@ to{
 
 
 
- 
+
+
+
+
+
+
+
 .Espaco3 {
   height: 15vh;
   font-size: 20px;
@@ -647,9 +650,16 @@ to{
 
 
 
+
+
+
+
+
+
+
+
 .Contato {
   padding-left: 100px;
-  overflow-y: scroll;
   scroll-snap-type: y proximity;
   scroll-snap-align: start;
   height: 100vh;
