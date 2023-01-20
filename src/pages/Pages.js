@@ -57,8 +57,8 @@ function Pages(){
                                 <h2>Paraíba, Brasil</h2>
                                     <div className="sobre-paragrafo">
                                         <p>
-                                            Olá meu nome Vinícius Medeiros, tenho 17 anos(um mês para 18), sou um jovem que entrou no mundo da programação aos 15 anos, terminei meu primeiro tecnólogo de informática para internet quando fiz 17 anos. Hoje faço Bacharelado de Ciências da Computação.
-                                            Sendo bem direto com vocês eu amo oque eu faço, minha vontade é chegar a um nível onde, eu seja capaz de ajudar de forma absurda a vida das pessoas no dia a dia. 
+                                            Olá meu nome Vinícius Medeiros, tenho 18 anos, sou um jovem que entrou no mundo da programação aos 15 anos, terminei meu primeiro tecnólogo de informática para internet quando fiz 17 anos. Hoje faço Bacharelado de Ciências da Computação, estou no 3° período.
+                                            Sendo bem direto com vocês eu amo oque eu faço, minha vontade é chegar a um nível onde, através da tecnologia eu seja capaz de ajudar de forma absurda a vida das pessoas no dia a dia. 
                                             Tudo isso que eu guardo vem desde pequeno, sempre observei a forma que a tecnologia avança e simplifica os processos que antes eram robustos e pesados ou até mesmo considerados “impossíveis”. 
                                         </p>
                                     </div>
