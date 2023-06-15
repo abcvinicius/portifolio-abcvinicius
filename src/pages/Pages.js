@@ -8,12 +8,17 @@ import PostgreesSql from '../assets/PostgreesSql.png';
 import SpringBoot from '../assets/SpringBoot.png';
 import Html5 from '../assets/Html5.png';
 import Css3 from '../assets/Css3.png';
+import ScriptFormSend from "../scripts/pageScript";
 
 
 
 function Pages(){
+    
+    ScriptFormSend();
+    
     return (
         <AreaStylePages>
+        
             <body>    
                 <div className="container"> 
 
@@ -91,7 +96,7 @@ function Pages(){
                         <div id="tec-titulos">
                             <h1>Java </h1>
                             <p>
-                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            Entrei no mundo de Java desde o final de 2021 até o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
                             </p>
                         </div>
                        <div className="botao-java-tecnologia">
@@ -104,7 +109,7 @@ function Pages(){
                         <div id="tec-titulos">
                             <h1>Spring Boot </h1>
                             <p>
-                            Depois de ter entrado no mundo de Java e terminar POO por completo, eu começei a estudar Spring onde aprendi sobre aplicações, metologia Rest e conexões com Banco de Dados, até então continuo estudando pois eu sei que ainda estou na ponta do "Iceberg".
+                            Depois de ter entrado no mundo de Java e terminar POO por completo, eu começei a estudar Spring onde aprendi sobre aplicações, metologia Rest e conexões com Banco de Dados, Tokens, Containers, SpringSecurity...  E por ai vai! Eu pretendo entrar de cara nessa carreira, por isso estou tão focado e sempre esforçado, quero muito mostrar oque eu sei e ganhar mais experiências dentro dessa area
                             </p>
                         </div>
                        <div className="botao-java-tecnologia">
@@ -117,7 +122,7 @@ function Pages(){
                         <div id="tec-titulos">
                             <h1>PostgreSQL</h1>
                             <p>
-                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            No mesmo ano de Java eu também precisei estudar alguns Bancos de Dados e um deles foi exatamente o PostgreSQL, me apronfundei e criei conhecimento sobre comandos SQL e na interface do PostgreSQL.
                             </p>
                         </div>
                        <div className="botao-java-tecnologia">
@@ -130,7 +135,7 @@ function Pages(){
                         <div id="tec-titulos">
                             <h1>JavaScript</h1>
                             <p>
-                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            Pegando pela métade de 2022 eu começei a revisar o FrontEnd. Eu já tinha experiências com HTML, CSS e um pouco de JS dévido ao meu Ensino Médio, onde eu concluí um Tecnólogo de "Informatica para Internet". Então nesse meio tempo de JavaScript conheci o famoso ReactJs e depois de conhecer sempre estou utilizando ele!
                             </p>
                         </div>
                        <div className="botao-java-tecnologia">
@@ -143,7 +148,7 @@ function Pages(){
                         <div id="tec-titulos">
                             <h1>Html 5</h1>
                             <p>
-                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            Conheci HTML dentro da minha escola. No ensino médio você era obrigado a escolhe um curso"tecnólogo" para fazer, então escolhi Informática para Internet, desde os meu 15 anos que eu uso HTML.
                             </p>
                         </div>
                        <div className="botao-java-tecnologia">
@@ -156,7 +161,7 @@ function Pages(){
                         <div id="tec-titulos">
                             <h1>Css 3</h1>
                             <p>
-                            Entrei no mundo de Java desde o início de 2022. Nunca deixei de estudar java, mas o meu início foi muito pesado, sempre ficava passando noites estudando e por isso hoje compreendo muito coisa quem nem imaginava saber. Meus estudos em java foram focados dentro na parte de JPA, APIs, Rest, Banco de Dados.
+                            O CSS foi da mesma forma que o HTML, para fazer as interface era obvio que você teria que utilizar o CSS, então criando as minhas pagínas eu fui editando e aprendendo sobre div, alinhamentos, reponsividade e contudo eu continuo a estudar, melhorar minhas habilidades dentro do FrontEnd, apesar de meu foco ser Java mas eu gosto de ser bom no que eu faço, por isso matenho essa disciplina.
                             </p>
                         </div>
                        <div className="botao-java-tecnologia">
@@ -200,12 +205,13 @@ function Pages(){
                                 <div className="card-form">
                                     <h1>Formulario</h1>
                                     <div className="textfield">
+                            <form  action="">
 
 
 
                                     <div className="textfield-name">
                                         <label for="Nome">Nome</label>
-                                        <input type={Text}  placeholder="Nome" ></input>
+                                        <input type={"text"} class="nome" name="nome" placeholder="Nome" ></input>
                                     </div>
 
 
@@ -213,21 +219,21 @@ function Pages(){
 
                                     <div className="textfield-email">
                                         <label for="email">Email</label>
-                                        <input type={"email"} placeholder="Email"></input>                                    
+                                        <input type={"text"} class="email" name="email" placeholder="Email"></input>                                    
                                     </div>
 
 
 
                                     <div className="textfield-telefone">
                                         <label for="telefone">Telefone</label>
-                                        <input type={"tel"} pattern="\([0-9]{2}\)[9]{1}[0-9]{4}[0-9]{4}" placeholder="(XX)-9XXXX-XXXX"></input>                                    
+                                        <input type={"text"} class="telefone" name="telefone" placeholder="(XX)-9XXXX-XXXX"></input>                                    
                                     </div>
 
 
 
                                     <div className="textfield-descricao">
                                         <label for="desc">Descrição</label>
-                                        <input type={Text} placeholder="Digite sobre o porque de entrar em contato:"></input>                                    
+                                        <input type={"text"} class="descricao" name="descricao" placeholder="Digite sobre o porque de entrar em contato:"></input>                                    
                                     </div>
 
 
@@ -235,15 +241,18 @@ function Pages(){
                                 <button type="submit" className="btn-form">Enviar</button>
 
                                 
+                                </form>
                                 </div>
                                 </div>
                             </div>
                         </div>
                     </section>
+
                 </div>
             </body>
             </AreaStylePages>   
     );
 }
+
 
 export default Pages;

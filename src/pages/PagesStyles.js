@@ -628,7 +628,7 @@ to{
   max-width: calc(100%);
   margin: 0 auto;
 }
-}
+
 
 
 
