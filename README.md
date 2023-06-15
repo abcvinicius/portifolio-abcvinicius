@@ -1,1 +1,1 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=CA2115&size=35&center=true&vCenter=true&width=1000&lines=Be+Welcome!;Clique+aqui+para+acessar+o+Portifolio+:%29)](https://abcvinicius.github.io/portifolio-abcvinicius/)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=CA2115&size=35&center=true&vCenter=true&width=1000&lines=Be+Welcome!;Click+here+to+access+the+portfolio!ツ;Seja+bem+vindo!;Clique+aqui+para+acessar+o+Portifolio+ツ ](https://abcvinicius.github.io/portifolio-abcvinicius/)
