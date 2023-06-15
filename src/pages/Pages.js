@@ -200,6 +200,8 @@ function Pages(){
                             <div className="left-form">
                                 <h1 style={{color: "white"}}>Preencher o formulário caso queira entrar em Contato. </h1>
                                 <h1>Esse Formulario é conectado a uma API onde dentro do Banco eu acesso as informações das pessoas que entraram em contato comigo.</h1>
+                                <br></br>
+                                <h1>obs: (Como o projeto está no github ainda não é possivel enviar uma mensagem, mas toda a API e a conexão com servidor está feita mas é nescesasrio um dominio)</h1>
                             </div>
                             <div className="right-form">
                                 <div className="card-form">
