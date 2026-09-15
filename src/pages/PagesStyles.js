@@ -655,7 +655,6 @@ to{
 
 
 
-
 .Contato {
     padding-left: 100px;
     scroll-snap-type: y proximity;
@@ -673,6 +672,7 @@ to{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .left-form {
@@ -683,6 +683,7 @@ to{
     text-align: center;
     flex-direction: column;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .left-form h1 {
@@ -696,6 +697,7 @@ to{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .card-form {
@@ -708,6 +710,7 @@ to{
     padding: 30px 35px;
     border-radius: 30px;
     box-shadow: 0px 10px 40px #010101;
+    box-sizing: border-box;
 }
 
 .card-form h1 {
@@ -717,67 +720,38 @@ to{
     margin: 0 0 20px;
 }
 
-.textfield {
+.contact-info {
+    width: 100%;
     display: flex;
-    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    gap: 20px;
 }
 
-.textfield-name,
-.textfield-email,
-.textfield-telefone {
+.contact-item {
     width: 100%;
-    margin-bottom: 15px;
-}
-.textfield-descricao .descricao {
-    width: 100%;
-    height: 10rem;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    background: #101010;
-    color: #fff;
-    outline: none;
-    box-sizing: border-box;
-    resize: vertical;
-    overflow-y: auto;
-    font-family: inherit;
-}
-    
-.textfield input {
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    background: #101010;
-    color: #fff;
-    outline: none;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.textfield-descricao input {
-    width: 100%;
-    height: 10rem;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    background: #101010;
-    color: #fff;
-    outline: none;
-    box-sizing: border-box;
+.contact-item span {
+    color: #DB2B39;
 }
 
-.textfield-button {
-    text-align: center;
+.contact-item a {
+    color: white;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.contact-item a:hover {
+    color: #DB2B39;
 }
 
 .btn-form {
     display: block;
     text-align: center;
     text-decoration: none;
-
     cursor: pointer;
     width: 80%;
     padding: 15px;
@@ -785,11 +759,150 @@ to{
     background-color: #DB2B39;
     outline: none;
     text-transform: uppercase;
-    margin: 10px auto;
+    margin: 20px auto 0;
     border: none;
     border-radius: 20px;
     letter-spacing: 5px;
     transition: letter-spacing 0.4s ease-out;
+    box-sizing: border-box;
+}
+
+.btn-form:hover {
+    color: #fff;
+    letter-spacing: 7px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+@media only screen and (min-width: 200px) and (max-width: 690px) {
+
+    .Contato {
+        padding-left: 0;
+        min-height: 100vh;
+    }
+
+    .Contato .main-form {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    .Contato .left-form {
+        width: 100% !important;
+        min-height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .Contato .right-form {
+        width: 100% !important;
+        min-height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .Contato .card-form {
+        width: 100%;
+        max-width: 500px;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+
+    .card-form h1 {
+        font-size: 32px;
+    }
+
+    .left-form h1 {
+        font-size: 24px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+
+    .btn-form {
+        width: 90%;
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+   ========================= */
+
+@media only screen and (min-width: 200px) and (max-width: 320px) {
+
+    .Contato .main-form {
+        padding: 30px 10px;
+    }
+
+    .Contato .left-form {
+        padding: 10px;
+    }
+
+    .Contato .right-form {
+        padding: 10px;
+    }
+
+    .left-form h1 {
+        font-size: 18px;
+    }
+
+    .card-form {
+        padding: 20px 15px;
+        border-radius: 20px;
+    }
+
+    .card-form h1 {
+        font-size: 26px;
+    }
+
+    .contact-item {
+        font-size: 12px;
+    }
+
+    .btn-form {
+        width: 100%;
+        font-size: 11px;
+        letter-spacing: 2px;
+        padding: 12px;
+    }
+}
+
+
+/* =========================
+   CELULARES MÉDIOS
+   ========================= */
+
+@media only screen and (min-width: 321px) and (max-width: 381px) {
+
+    .left-form h1 {
+        font-size: 20px;
+    }
+
+    .card-form h1 {
+        font-size: 28px;
+    }
+
+    .contact-item {
+        font-size: 13px;
+    }
+
+    .btn-form {
+        width: 90%;
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
 }
 
 .btn-form:hover {
